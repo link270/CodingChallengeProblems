@@ -13,7 +13,7 @@ int main(){
     }
 
     b=a;
-    m=n;
+    m=0;
     for(int i=0;i<q;++i){
         std::cin>>t;
         while(t>0&&m>0){
@@ -22,6 +22,8 @@ int main(){
                 break;
             }
 
+            t-=a[i];
+            if()
         }
 
         std::cout<<m<<std::endl;

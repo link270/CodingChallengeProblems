@@ -3,7 +3,7 @@
 #include <algorithm>
 
 int main(){
-    int n, m, q, t, total=0;
+    int n, q, t, total=0;
     std::vector<int> a, b;
     std::cin>>n>>q;
     for(int i=0;i<n;++i){
@@ -11,22 +11,32 @@ int main(){
         a.push_back(t);
         total+=t;
     }
-
+    
+    int dead=0, j=0;
     b=a;
-    m=0;
     for(int i=0;i<q;++i){
         std::cin>>t;
-        while(t>0&&m>0){
-            if(t>=total){
-                m=n;
+        while(t>0&&dead<n+1){
+            if(t>=total || dead>=n || j>=n){
+                dead=0;
+                b=a;
+                j=0;
                 break;
             }
+            
+            if(t>=b[j]){
+                dead++;
+                t-=b[j];
+            }
+            else {
+                t-=b[j];
+                b[j]-=t;
+            }
 
-            t-=a[i];
-            if()
+            ++j;
         }
 
-        std::cout<<m<<std::endl;
+        std::cout<<n-dead<<std::endl;
     }
 
     return 0;

@@ -77,6 +77,23 @@
         "__tree": "cpp",
         "map": "cpp",
         "filesystem": "cpp",
+<<<<<<< HEAD
         "__functional_base_03": "cpp"
+=======
+        "cfenv": "cpp",
+        "csetjmp": "cpp",
+        "csignal": "cpp",
+        "cuchar": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "unordered_set": "cpp",
+        "regex": "cpp",
+        "set": "cpp",
+        "future": "cpp",
+        "scoped_allocator": "cpp",
+        "shared_mutex": "cpp",
+        "typeindex": "cpp",
+        "valarray": "cpp"
+>>>>>>> e6f8ec5b888adbc73c665588044b2674f7308e21
     }
 }

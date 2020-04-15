@@ -1,2 +1,0 @@
-150B:
-https://atcoder.jp/contests/abc150/submissions/9542554
